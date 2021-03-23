@@ -1,4 +1,4 @@
-This code provides models to extract intelligent information (company, address, date, total amount) from invoice documents based on deep neural network.
+This code provides models to extract intelligent information (company, address, date, total amount) from invoice documents based on deep neural network. The flamework mainly includes two steps. Firstly, OCR extractions by using “Tesseract” library. And then classifying the context by using recurrent neural network. 
 
 
 ## Pre-trained models
