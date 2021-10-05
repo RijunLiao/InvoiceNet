@@ -1,4 +1,4 @@
-This code provides models to extract intelligent information (company, address, date, total amount) from invoice documents based on deep neural network. The flamework mainly includes two steps. Firstly, OCR extractions by using “Tesseract” library. And then classifying the context by using recurrent neural network. 
+This code provides models to extract intelligent information (company, address, date, total amount) from invoice documents based on natural language processing. The flamework mainly includes two steps. Firstly, text data extraction and processing by using text detector algorithm. And then recognizing the context by using recurrent neural network. 
 
 
 ## Pre-trained models
@@ -11,7 +11,7 @@ You can download the pre-trained models from [Google Drive](https://drive.google
 To install InvoiceNet on Ubuntu 18.04, run the following commands:
 
 ```bash
-git clone https://github.com/naiveHobo/InvoiceNet.git
+git clone https://github.com/RijunLiao/invoice.git
 cd InvoiceNet/
 
 # Run installation script
