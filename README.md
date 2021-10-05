@@ -39,7 +39,7 @@ python predict.py --field enter-field-here --invoice path-to-invoice-file
 
 # For example, to extract field total_amount from an invoice file invoices/1.pdf
 python predict.py --field total --invoice invoices/1.pdf # just predict the amount
-python predict.py --field comany address total date --invoice invoices/1.pdf # predict the omany address total date at the same time
+python predict.py --field comany address total date --invoice invoices/1.pdf # predict the comany address total date at the same time
 ```
 
 ---
