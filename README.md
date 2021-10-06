@@ -27,6 +27,22 @@ To be able to use InvoiceNet, you need to source the virtual environment that th
 source env/bin/activate
 ```
 
+## Training 
+
+Prepare the data for training first by running the following command:
+```bash
+python prepare_data.py --data_dir train_data/
+```
+
+Train InvoiceNet using the following command:
+```bash
+python train.py --field enter-field-here --batch_size 8
+
+# For example, for field 'total_amount'
+python train.py --field total_amount --batch_size 8
+```
+
+
 ## Prediction
 
 ---
@@ -43,6 +59,7 @@ python predict.py --field comany address total date --invoice invoices/1.pdf # p
 ```
 
 ---
+
 
 ### Multiple invoices
 For extracting information using the trained InvoiceNet model, you just need to place the PDF invoice documents in one directory in the following format:
@@ -63,6 +80,18 @@ python predict.py --field total --data_dir predict_data/  # just predict the amo
 python predict.py --field comany address total date --data_dir predict_data/ # predict the omany address total date at the same time
 ```
 ---
+## Prediction Demo
+Input invoice:
+
+<img width='250' src='https://github.com/RijunLiao/InvoiceNet/blob/main/images/1.jpg' alt='test'/>
+
+Result of total amount extraction:
+
+<img width='950' src='https://github.com/RijunLiao/InvoiceNet/blob/main/images/result_1.png'/>
+
+Result of total amount extraction:
+
+<img width='950' src='https://github.com/RijunLiao/InvoiceNet/blob/main/images/result_all.png'/>
 
 ## Reference
 This implementation is largely based on the work of [InvoiceNet](https://github.com/naiveHobo/InvoiceNet)
